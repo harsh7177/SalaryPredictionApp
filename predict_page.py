@@ -4,8 +4,7 @@ import numpy as np
 
 
 def load_model():
-    with open('saved_steps.pkl', 'rb') as file:
-        data = pickle.load(file)
+    data = load('saved_steps.joblib')
     return data
 
 data = load_model()
